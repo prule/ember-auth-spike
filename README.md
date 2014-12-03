@@ -1,3 +1,16 @@
+# Create steps
+
+* mkdir spike
+* cd spike/
+* ember new auth-spike
+* cd auth-spike/
+* npm install --save-dev ember-cli-simple-auth
+* ember generate ember-cli-simple-auth
+* ember g route login
+
+Copied sample authenticator code from https://github.com/simplabs/ember-simple-auth/blob/master/examples/7-multiple-external-providers.html
+ and added contentSecurityPolicy to environment.js
+
 # Auth-spike
 
 This README outlines the details of collaborating on this Ember application.
