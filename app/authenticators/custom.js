@@ -2,7 +2,7 @@ import Ember from 'ember';
 import Base from 'simple-auth/authenticators/base';
 
 export default Base.extend({
-  restore: function (data) {
+  restore: function (properties) {
     return new Ember.RSVP.Promise(function (resolve, reject) {
       console.log('restore');
       if (!Ember.isEmpty(properties.accessToken)) {
